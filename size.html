@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (min-inline-size: 0px) and (max-inline-size: 480px) {
+            body {
+                background-color: red;
+            }
+        }
+        div {
+            background-color: blue;
+            inline-size: 150px;
+            block-size: 150px;
+            margin-block-end: 20px;
+            animation-name: square;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+       
+        @keyframes square {
+            0% {
+               background-color: blue;
+               inset-block-start: 50px;
+               inset-inline-start: 100px;
+            }
+            25% {
+               background-color: red;
+               rotate: 150deg;
+               inset-block-start: 100px;
+               inset-inline-start: 150px;
+            }
+            50% {
+                background-color: yellow;
+                rotate: 150deg;
+                inset-block-start: 150px;
+                inset-inline-start: 200px;
+            }
+            75% {
+                background-color: green;
+                rotate: 150deg;
+                inset-block-start: 200px;
+                inset-inline-start: 250px;
+            }
+            100% {
+                background-color:gray;
+                rotate: 150deg;
+                inset-block-start: 250px;
+                inset-inline-start: 300px;
+            }
+        }
+            .container{
+            background-color: blue;
+            inline-size: 100px;
+            block-size: 100px;
+            margin-block-end: 2px;
+            animation-name: square;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+
+            @keyframes square2{
+            0% {
+                background-color: black;
+                rotate: 150deg;
+                inset-block-start: 300px;
+                inset-inline-start: 350px;
+            }
+            25% {
+                background-color: orange;
+                rotate: 150deg;
+                inset-block-start: 350px;
+                inset-inline-start: 400px;
+            }
+            50% {
+                background-color: pink;
+                rotate: 150deg;
+                inset-block-start: 400px;
+                inset-inline-start: 450px;
+            }
+                75% {
+                    background-color: purple;
+                    rotate: 150deg;
+                    inset-block-start: 450px;
+                    inset-inline-start: 500px;
+                }
+                100%{
+                    background-color: aqua;
+                    rotate: 200deg;
+                    inset-block-start: 455px;
+
+                }
+            }
+        
+    </style>
+</head>
+<body>
+    <div><div class="container"></div2></div>
+    <h2>hello everyone</h2>
+</body>
+</html>
