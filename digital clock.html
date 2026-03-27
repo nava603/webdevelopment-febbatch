@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digital clock</title>
+</head>
+<body>
+    <div class="clock">
+        <div class="" id="time">00:00:00 am</div>
+        <div class="" id="date">01/jan/2026</div>
+
+    </div>
+    <script>
+        function showclock(){
+            let hours = now.gethours()
+            let minutes = now.getminutes()
+            let seconds = now.getseconds()
+            let ampm = hours>=12?"pm":"am"
+           
+            if(hours == 12){
+                hours = hour - 12
+            }
+            if(hours == 0){
+
+            }
+
+         document.getElementById('time').innerHTML= hours + ':'+minutes +":" +seconds+":"+ ampm
+          
+         let day = now.getday()
+         let month = now.getmonth()
+         let year =now.getyear()
+
+        }
+        setInterval(showclock,1000)
+        showclock()
+    </script>
+</body>
+</html>

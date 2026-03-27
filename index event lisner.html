@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>welcome to events</h1>
+    <input id="myinput" placeholder="type something....">
+    <div id="mydiv">
+        <div class="content">scroll</div>
+    </div>
+    <script>
+        const input = document.getElementById("myinput")
+        const div = document.getElementById("mydiv")
+
+        //synatx
+        //tag/varable.addeventlisnter
+        //keyupeyword events
+        function handelkeyup(e){
+            console.log('key released'+e.key)
+        }
+        input.addEventListener('keyup',handlekeydown)
+
+        //change-of value in input the search
+        function handlechange(s){
+            console.log('final value of input:'+ s.target.value)
+
+        }
+        input.addEventListener('cahnge',handlecahnge)
+
+        //scrolled
+        function handlescroll(){
+            console.log('scrolled')
+        }
+        div.addEventListener('scroll',handlescroll)
+
+        function handelmouseover(){
+            div.style.backgroundColor="red"
+
+        }
+        div.addEventListener('mouseover',handelmouseover)
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .day{
+            background: white;
+            color: black;
+        }
+        .night{
+            background: #000;
+            color: white;
+        }
+        .party{
+            background: linear-gradient(45deg red,blue,white);
+        }
+    </style>
+</head>
+<body class="body">
+    <h1 id="w">welcome</h1>
+    <div class="button">
+        <button onclick="setthem('day')"> day</button>
+        <button onclick="setthem('night')">night</button>
+        <button onclick="setthem('party')">party</button>
+    </div>
+    <script>
+        function setthem(theme){
+          const body = document.getElementById("body")
+          const title = document.getElementById("w")
+          //remove all thems
+          body.className="";
+
+          body.classList.add(theme)
+          if(theme == "day"){
+            title.innerText = "good morning"
+          }
+          else if(theme == "night"){
+            title.innerText="good night"
+          }
+          else{
+            title.inn
+          }
+}    </script>
+</body>
+</html>
